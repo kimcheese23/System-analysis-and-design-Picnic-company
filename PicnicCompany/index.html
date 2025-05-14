@@ -1,0 +1,126 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta content="width=device-width, initial-scale=1" name="viewport"/>
+        <title>Picnic Company</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&amp;display=swap" rel="stylesheet"/>
+        <style>
+            body {
+                font-family: 'Press Start 2P', cursive;
+                }
+        </style>
+    </head>
+    <body class="relative min-h-screen bg-white">
+        <div class="relative min-h-screen">
+            <img alt="Picnic basket with fruits and wine bottle on a blanket on green grass" class="w-full h-full object-cover filter blur-sm brightness-75" height="1080" src="https://storage.googleapis.com/a1aa/image/9b65e6c5-8327-44a5-a9b1-3ba5b4252e31.jpg" width="1920"/>
+            <!-- Overlay content -->
+            <div class="absolute inset-0 flex flex-col justify-start px-4 sm:px-6 md:px-10 py-3 sm:py-4 md:py-6">
+                <!-- Navbar with white opaque background -->
+                <nav class="w-full bg-white bg-opacity-80 p-2 rounded-lg flex items-center justify-end space-x-3 sm:space-x-6 text-black text-xs sm:text-sm md:text-base font-bold select-none">
+                    <ul class="flex items-center space-x-3 sm:space-x-6 whitespace-nowrap">
+                        <li class="flex items-center space-x-1 cursor-pointer">
+                            <i class="fas fa-home"></i>
+                            <span>Home</span>
+                        </li>
+                        <li class="flex items-center space-x-1 cursor-pointer">
+                            <i class="far fa-bell"></i>
+                            <span>Notifications</span>
+                        </li>
+                        <li class="flex items-center space-x-1 cursor-pointer">
+                            <i class="fas fa-question-circle"></i>
+                            <span>Help</span>
+                        </li>
+                        <li class="flex items-center space-x-1 cursor-pointer">
+                            <i class="fas fa-cog"></i>
+                            <span>Setting</span>
+                        </li>
+                        <li class="cursor-pointer">Register</li>
+                        <li class="cursor-pointer">Login</li>
+                    </ul>
+                </nav>
+                <!-- Main heading and search -->
+                <div class="mt-6 sm:mt-8 md:mt-10 max-w-full w-full">
+                    <h1 class="text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight drop-shadow-[0_0_3px_#000] max-w-full select-none">PICNIC COMPANY
+                    </h1>
+                    <div class="flex items-center space-x-2 mt-1 max-w-full select-none">
+                        <span class="text-white text-sm sm:text-lg md:text-xl lg:text-2xl drop-shadow-[0_0_3px_#000]">YOUR AMAZING TOUR</span>
+                    </div>
+                </div>
+                <!-- Search bar -->
+                <form aria-label="Search tours" class="mt-6 sm:mt-8 max-w-full w-full flex items-center bg-white rounded-full border border-black overflow-hidden" role="search">
+                    <input aria-label="Search" class="flex-grow px-4 sm:px-6 py-2 sm:py-3 text-black text-sm sm:text-base md:text-lg rounded-l-full focus:outline-none" placeholder="Search" type="search"/>
+                    <button aria-label="Search button" class="bg-[#ff5c5c] w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center" type="submit">
+                        <i class="fas fa-search text-black text-base sm:text-lg"></i>
+                    </button>
+                    <button aria-label="Filter button" class="w-10 h-10 sm:w-12 sm:h-12 border-l border-black rounded-full flex items-center justify-center" type="button">
+                        <i class="fas fa-filter text-black text-base sm:text-lg"></i>
+                    </button>
+                </form>
+                <!-- Book Now button -->
+                <div class="mt-6 sm:mt-8 w-full flex justify-center">
+                    <button class="bg-yellow-400 text-black font-extrabold text-base sm:text-lg md:text-xl px-8 sm:px-12 py-3 sm:py-4 rounded-full select-none whitespace-nowrap">Book Now
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer section -->
+        <footer class="w-full bg-[#ff7a5a] py-8 px-6 sm:px-8">
+            <div class="max-w-6xl mx-auto">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <!-- Images section -->
+                    <div class="relative w-full md:w-1/3 mb-6 md:mb-0">
+                        <div class="flex justify-center md:justify-start space-x-6">
+                            <!-- Large red circle with picnic food image -->
+                            <div class="w-36 sm:w-40 h-36 sm:h-40 rounded-full border-4 border-[#ff5c5c] overflow-hidden">
+                                <img alt="Picnic food including grapes, bread, and drinks on a wooden table outdoors" class="w-full h-full object-cover" height="160" src="https://storage.googleapis.com/a1aa/image/737f6091-8aa3-4dbb-b85f-a72501d5b474.jpg" width="160"/>
+                            </div>
+                            <!-- Smaller green circle with woman on grass image -->
+                            <div class="w-24 sm:w-28 h-24 sm:h-28 rounded-full border-4 border-[#8de57a] overflow-hidden self-end">
+                                <img alt="Woman wearing hat relaxing on grass in a sunny park with trees" class="w-full h-full object-cover" height="112" src="https://storage.googleapis.com/a1aa/image/5f149016-6e8a-453f-f151-5cd0522573a3.jpg" width="112"/>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Contact info -->
+                    <div class="w-full md:w-1/3 text-white text-center md:text-left">
+                        <p class="mb-3 font-bold select-none text-[10px] sm:text-xs">For more information, please contact</p>
+                        <p class="flex items-center justify-center md:justify-start space-x-3 mb-2 text-[10px] sm:text-xs">
+                            <i class="far fa-envelope text-white text-base sm:text-lg"></i>
+                            <span class="select-text break-all">congtydangoinhom8@gmail.com</span>
+                        </p>
+                        <p class="flex items-center justify-center md:justify-start space-x-3 text-[10px] sm:text-xs">
+                            <i class="fas fa-phone-alt text-white text-base sm:text-lg"></i>
+                            <span class="select-text">0123 - 456 - 789</span>
+                        </p>
+                    </div>
+                    
+                    <!-- Social links -->
+                    <div class="w-full md:w-1/3 mt-6 md:mt-0 flex justify-center md:justify-end">
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-white hover:text-yellow-200 text-xl">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="#" class="text-white hover:text-yellow-200 text-xl">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="text-white hover:text-yellow-200 text-xl">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="text-white hover:text-yellow-200 text-xl">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Copyright -->
+                <div class="mt-8 text-center text-white text-[10px] sm:text-xs">
+                    <p>&copy; 2023 Picnic Company. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

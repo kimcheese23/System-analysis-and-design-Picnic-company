@@ -1,0 +1,264 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Picnic Company Tour Management
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: 'Inter', sans-serif;
+    }
+    .text-stroke {
+      -webkit-text-stroke: 1px black;
+      -webkit-text-fill-color: white;
+    }
+  </style>
+ </head>
+ <body class="min-h-screen bg-[#ecf9e7]">
+  <div class="flex min-h-screen">
+   <!-- Sidebar -->
+   <aside class="flex flex-col w-48 sm:w-56 md:w-64 border-r border-white/50 select-none">
+    <div class="flex items-center justify-center h-20 border-b border-white/50 bg-[#f7d9d0]">
+     <img alt="Picnic Company logo, white circle with a small airplane icon" class="mr-2" height="40" src="https://storage.googleapis.com/a1aa/image/4fbac2b3-d1a6-408a-7cae-949e93a9478f.jpg" width="40"/>
+     <span class="text-white text-[10px] sm:text-xs md:text-sm font-bold tracking-widest text-stroke">
+      PICNIC COMPANY
+     </span>
+    </div>
+    <button class="flex items-center gap-2 px-3 py-4 border-b border-white/50 bg-[#f7d9d0] hover:bg-[#f7d9d0] text-white text-[9px] sm:text-[10px] md:text-xs leading-tight">
+     <i class="fas fa-headset text-lg">
+     </i>
+     <span>
+      Human resources management
+     </span>
+    </button>
+    <button class="flex items-center gap-2 px-3 py-4 border-b border-white/50 bg-[#f9e7b7] hover:bg-[#f9e7b7] text-white text-[9px] sm:text-[10px] md:text-xs leading-tight">
+     <i class="fas fa-users text-lg">
+     </i>
+     <span>
+      Customer management
+     </span>
+    </button>
+    <button class="flex items-center gap-2 px-3 py-4 border-b border-white/50 bg-gradient-to-r from-[#4a7dbd] to-[#a3c0e8] hover:from-[#4a7dbd] hover:to-[#a3c0e8] text-white text-[9px] sm:text-[10px] md:text-xs leading-tight">
+     <i class="fas fa-shopping-basket text-lg">
+     </i>
+     <span>
+      Excursion tour management
+     </span>
+    </button>
+    <button class="flex items-center gap-2 px-3 py-4 border-b border-white/50 bg-[#f9e7b7] hover:bg-[#f9e7b7] text-white text-[9px] sm:text-[10px] md:text-xs leading-tight">
+     <i class="fas fa-hand-holding-usd text-lg">
+     </i>
+     <span>
+      Financial management
+     </span>
+    </button>
+    <button class="flex items-center gap-2 px-3 py-4 bg-[#f7d9d0] hover:bg-[#f7d9d0] text-white text-[9px] sm:text-[10px] md:text-xs leading-tight">
+     <i class="fas fa-hands-helping text-lg">
+     </i>
+     <span>
+      Service provider/partner management
+     </span>
+    </button>
+   </aside>
+   <!-- Main content -->
+   <main class="flex-1 flex flex-col p-4 sm:p-6 md:p-8">
+    <!-- Top bar -->
+    <div class="flex justify-end items-center gap-6 mb-6 bg-[#ecf9e7] text-gray-600 text-[9px] sm:text-xs md:text-sm select-none">
+     <div class="relative flex items-center gap-1 cursor-pointer">
+      <i class="fas fa-bell">
+      </i>
+      <span class="absolute -top-1 -right-2 w-3 h-3 rounded-full bg-red-600 border-2 border-[#ecf9e7]">
+      </span>
+      <span>
+       Notification
+      </span>
+     </div>
+     <div class="flex items-center gap-1 cursor-pointer">
+      <i class="fas fa-cog">
+      </i>
+      <span>
+       Setting
+      </span>
+     </div>
+     <div class="flex items-center gap-1 cursor-pointer">
+      <i class="fas fa-user">
+      </i>
+      <span>
+       Management
+      </span>
+     </div>
+    </div>
+    <!-- Search and export -->
+    <div class="flex flex-col sm:flex-row sm:items-center sm:gap-4 mb-6">
+     <div class="flex items-center border border-black rounded-md flex-1 h-12 px-4 mb-3 sm:mb-0">
+      <i class="fas fa-search text-lg">
+      </i>
+      <input class="ml-3 w-full text-base font-normal outline-none" placeholder="Find ID tour" type="text"/>
+      <select aria-label="Sort dropdown" class="ml-3 appearance-none bg-transparent border-none text-black text-lg cursor-pointer">
+       <option>
+        ▼
+       </option>
+      </select>
+      <i class="fas fa-filter ml-3 text-lg cursor-pointer">
+      </i>
+     </div>
+     <button aria-label="Export" class="flex items-center justify-center bg-[#4bbf73] text-black font-normal text-base px-6 py-3 rounded-md hover:bg-[#3da55a] transition-colors">
+      <i class="fas fa-upload mr-2 text-xl">
+      </i>
+      Export
+     </button>
+    </div>
+    <!-- Table -->
+    <div class="overflow-x-auto border border-black rounded-md">
+     <table class="w-full border-collapse border border-black text-[10px] sm:text-xs md:text-sm">
+      <thead class="bg-white">
+       <tr>
+        <th class="border border-black font-bold px-2 py-2 text-left w-[6%]">
+         ID
+        </th>
+        <th class="border border-black font-bold px-2 py-2 text-left w-[30%]">
+         Tour
+        </th>
+        <th class="border border-black font-bold px-2 py-2 text-left w-[20%]">
+         Tour guide
+        </th>
+        <th class="border border-black font-bold px-2 py-2 text-left w-[12%]">
+         Begining date
+        </th>
+        <th class="border border-black font-bold px-2 py-2 text-left w-[12%]">
+         Ending date
+        </th>
+        <th class="border border-black font-bold px-2 py-2 text-left w-[12%]">
+         Price
+        </th>
+        <th class="border border-black font-bold px-2 py-2 text-left w-[8%]">
+         Update
+        </th>
+       </tr>
+      </thead>
+      <tbody>
+       <tr class="bg-[#4a7dbd] text-black">
+        <td class="border border-black px-2 py-2 font-semibold">
+         SP01
+        </td>
+        <td class="border border-black px-2 py-2 leading-tight">
+         Sapa Tourism - Hiking Moutain
+        </td>
+        <td class="border border-black px-2 py-2">
+         Hanah
+        </td>
+        <td class="border border-black px-2 py-2">
+         10/3/2025
+        </td>
+        <td class="border border-black px-2 py-2">
+         13/3/2025
+        </td>
+        <td class="border border-black px-2 py-2">
+         3.850.000
+        </td>
+        <td class="border border-black px-2 py-2 text-center text-2xl cursor-pointer">
+         <i class="fas fa-sync-alt">
+         </i>
+        </td>
+       </tr>
+      </tbody>
+     </table>
+    </div>
+    <!-- Detail card -->
+    <section class="mt-8 bg-[#f9d9a7] rounded-lg p-6 flex flex-col sm:flex-row gap-6 select-none">
+     <div class="flex flex-col items-center sm:items-start w-full sm:w-[250px] flex-shrink-0">
+      <img alt="Mountain landscape with blue sky and clouds, representing Sapa Tourism - Hiking Mountain" class="rounded-lg w-full h-[160px] object-cover" height="160" src="https://storage.googleapis.com/a1aa/image/ae0bd037-7e40-4fab-045d-22f0e7a0c8a1.jpg" width="250"/>
+      <p class="mt-2 font-bold text-[#0f4a8a] text-[12px] sm:text-sm md:text-base text-center sm:text-left w-full">
+       Sapa Tourism - Hiking Moutain
+      </p>
+     </div>
+     <div class="flex-1 text-[10px] sm:text-xs md:text-sm font-semibold leading-tight">
+      <p>
+       <span class="font-bold">
+        ID tour:
+       </span>
+       SP01
+      </p>
+      <p>
+       <span class="font-bold">
+        Start date:
+       </span>
+       10/03/2025
+       <span class="ml-2 font-bold">
+        End date:
+       </span>
+       13/03/2025
+      </p>
+      <p>
+       <span class="font-bold">
+        Price:
+       </span>
+       3.850.000 VND
+      </p>
+      <p>
+       <span class="font-bold">
+        Booking status:
+       </span>
+       <input aria-label="Available" checked="" class="align-middle w-4 h-4" type="checkbox"/>
+       <span class="align-middle ml-1 font-normal">
+        Available
+       </span>
+       <input aria-label="Fully booked" class="align-middle w-4 h-4 ml-6" type="checkbox"/>
+       <span class="align-middle ml-1 font-normal">
+        Fully booked
+       </span>
+      </p>
+      <p>
+       <span class="font-bold">
+        Maximum number of customers:
+       </span>
+       50 guests
+      </p>
+      <p>
+       <span class="font-bold">
+        Tour guide:
+       </span>
+       <span class="font-bold text-black">
+        #TG21 Gia Huy Tran
+       </span>
+      </p>
+      <p>
+       <span class="font-bold">
+        Tour status:
+       </span>
+       <input aria-label="Upcoming" checked="" class="align-middle w-4 h-4" type="checkbox"/>
+       <span class="align-middle ml-1 font-normal">
+        Upcoming
+       </span>
+       <input aria-label="In progress" class="align-middle w-4 h-4 ml-6" type="checkbox"/>
+       <span class="align-middle ml-1 font-normal">
+        In progress
+       </span>
+       <input aria-label="Completed" class="align-middle w-4 h-4 ml-6" type="checkbox"/>
+       <span class="align-middle ml-1 font-normal">
+        Completed
+       </span>
+      </p>
+      <p class="flex items-center gap-2 mt-1">
+       <span class="font-bold">
+        Timline Detail (places)
+       </span>
+       <button aria-label="Read more" class="flex items-center gap-1 border border-black rounded-full px-2 py-0.5 text-[8px] font-normal cursor-pointer select-none">
+        <span>
+         READ MORE
+        </span>
+        <i class="fas fa-chevron-right text-[10px]">
+        </i>
+       </button>
+      </p>
+     </div>
+    </section>
+   </main>
+  </div>
+ </body>
+</html>

@@ -1,0 +1,269 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Financial Report
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: 'Inter', sans-serif;
+    }
+    /* Outline text effect for sidebar text */
+    .text-outline {
+      color: white;
+      -webkit-text-stroke: 0.7px black;
+      text-stroke: 0.7px black;
+    }
+    /* Outline text effect for top right text */
+    .text-outline-sm {
+      color: #4a4a4a;
+      -webkit-text-stroke: 0.3px black;
+      text-stroke: 0.3px black;
+    }
+    /* Custom scrollbar for table */
+    .scrollbar-thin::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    .scrollbar-thin::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
+    .scrollbar-thin::-webkit-scrollbar-thumb {
+      background: #888;
+      border-radius: 5px;
+    }
+    .scrollbar-thin::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }
+  </style>
+ </head>
+ <body class="m-0 p-0 bg-[#e9f3d9]">
+  <div class="flex flex-col md:flex-row min-h-screen">
+   <!-- Sidebar -->
+   <div class="flex flex-row md:flex-col w-full md:w-56 border-b md:border-b-0 md:border-r border-white">
+    <!-- Logo -->
+    <div class="flex items-center justify-center bg-[#f7d7d0] border-b border-white h-16 md:h-20 w-1/5 md:w-full">
+     <div class="relative w-10 h-10 md:w-12 md:h-12">
+      <img alt="White round logo with a small airplane icon on top" class="w-10 h-10 md:w-12 md:h-12" height="40" src="https://storage.googleapis.com/a1aa/image/2a7b1ee1-fb8a-4c79-3d36-812ab382c670.jpg" width="40"/>
+      <div class="absolute top-0.5 left-2 text-black text-[9px] md:text-[10px] font-bold select-none">
+       a
+      </div>
+     </div>
+     <span class="ml-1 md:ml-2 text-white text-[12px] md:text-[14px] font-bold tracking-widest text-outline select-none whitespace-nowrap">
+      PICNIC COMPANY
+     </span>
+    </div>
+    <!-- Menu items -->
+    <button class="flex items-center gap-2 md:gap-3 px-2 md:px-3 py-3 md:py-5 bg-[#f7d7d0] border-r md:border-r-0 md:border-b border-white hover:bg-[#f7d7d0] focus:outline-none w-4/5 md:w-full">
+     <i class="fas fa-headset text-black text-xl md:text-2xl">
+     </i>
+     <span class="text-outline text-[10px] md:text-[14px] leading-[1.1] whitespace-pre-wrap">
+      Human resources
+      <br/>
+      management
+     </span>
+    </button>
+    <button class="flex items-center gap-2 md:gap-3 px-2 md:px-3 py-3 md:py-5 bg-[#f7d7d0] border-r md:border-r-0 md:border-b border-white hover:bg-[#f7d7d0] focus:outline-none w-4/5 md:w-full">
+     <i class="fas fa-users text-black text-xl md:text-2xl">
+     </i>
+     <span class="text-outline text-[10px] md:text-[14px] leading-[1.1] whitespace-pre-wrap">
+      Customer
+      <br/>
+      management
+     </span>
+    </button>
+    <button class="flex items-center gap-2 md:gap-3 px-2 md:px-3 py-3 md:py-5 bg-[#f7d7d0] border-r md:border-r-0 md:border-b border-white hover:bg-[#f7d7d0] focus:outline-none w-4/5 md:w-full">
+     <i class="fas fa-shopping-basket text-black text-xl md:text-2xl">
+     </i>
+     <span class="text-outline text-[10px] md:text-[14px] leading-[1.1] whitespace-pre-wrap">
+      Excursion tour
+      <br/>
+      management
+     </span>
+    </button>
+    <button class="flex items-center gap-2 md:gap-3 px-2 md:px-3 py-3 md:py-5 bg-gradient-to-r from-[#2f5ea8] to-[#f7d7d0] border-r md:border-r-0 md:border-b border-white hover:bg-gradient-to-r hover:from-[#2f5ea8] hover:to-[#f7d7d0] focus:outline-none w-4/5 md:w-full">
+     <i class="fas fa-hand-holding-usd text-white text-xl md:text-2xl">
+     </i>
+     <span class="text-white text-[10px] md:text-[14px] leading-[1.1] whitespace-pre-wrap select-none">
+      Financial
+      <br/>
+      management
+     </span>
+    </button>
+    <button class="flex items-center gap-2 md:gap-3 px-2 md:px-3 py-3 md:py-5 bg-[#f7d7d0] border-r md:border-r-0 border-white hover:bg-[#f7d7d0] focus:outline-none w-4/5 md:w-full">
+     <i class="fas fa-hands-helping text-black text-xl md:text-2xl">
+     </i>
+     <span class="text-outline text-[10px] md:text-[14px] leading-[1.1] whitespace-pre-wrap">
+      Service
+      <br/>
+      provider/partner
+      <br/>
+      management
+     </span>
+    </button>
+   </div>
+   <!-- Main content -->
+   <div class="flex-1 flex flex-col min-h-screen">
+    <!-- Top bar -->
+    <div class="flex items-center justify-end gap-6 md:gap-8 bg-[#e9f3d9] border-b border-[#d9e7c7] h-12 md:h-14 px-3 md:px-6 select-none text-outline-sm text-[10px] md:text-[12px]">
+     <div class="flex items-center gap-1">
+      <i class="fas fa-bell relative text-base md:text-lg">
+       <span class="absolute -top-1 -right-2 w-3 h-3 rounded-full bg-red-600 text-[8px] font-bold text-white flex items-center justify-center">
+        1
+       </span>
+      </i>
+      Notification
+     </div>
+     <div class="flex items-center gap-1">
+      <i class="fas fa-cog text-base md:text-lg">
+      </i>
+      Setting
+     </div>
+     <div class="flex items-center gap-1">
+      <i class="fas fa-user-tie text-base md:text-lg">
+      </i>
+      Management
+     </div>
+    </div>
+    <!-- Title -->
+    <h1 class="text-center text-[#3f4f1a] font-extrabold text-xl md:text-2xl mt-6 mb-4 md:mb-6 select-none px-2 md:px-0">
+     Financial report
+    </h1>
+    <!-- Table container -->
+    <div class="flex-1 px-3 md:px-6 pb-6 overflow-auto">
+     <div class="overflow-x-auto border border-black rounded max-w-full">
+      <table class="w-full border-collapse border border-black text-[12px] md:text-[14px] min-w-[700px]">
+       <thead class="bg-white">
+        <tr>
+         <th class="border border-black font-extrabold px-2 md:px-3 py-2 text-center whitespace-nowrap">
+          ID Report
+         </th>
+         <th class="border border-black font-extrabold px-2 md:px-3 py-2 text-center whitespace-nowrap">
+          Report Name
+         </th>
+         <th class="border border-black font-extrabold px-2 md:px-3 py-2 text-center whitespace-nowrap">
+          Representative
+         </th>
+         <th class="border border-black font-extrabold px-2 md:px-3 py-2 text-center whitespace-nowrap">
+          Type of Report
+         </th>
+         <th class="border border-black font-extrabold px-2 md:px-3 py-2 text-center whitespace-nowrap">
+          Report Content
+         </th>
+         <th class="border border-black font-extrabold px-2 md:px-3 py-2 text-center whitespace-nowrap">
+          Report
+         </th>
+        </tr>
+       </thead>
+       <tbody class="bg-white max-h-[240px] overflow-y-auto scrollbar-thin">
+        <tr>
+         <td class="border border-black px-2 md:px-3 py-3 text-center align-middle whitespace-nowrap">
+          BC01
+         </td>
+         <td class="border border-black px-2 md:px-3 py-3 text-center align-middle whitespace-nowrap">
+          Financial report
+         </td>
+         <td class="border border-black px-2 md:px-3 py-3 text-center align-middle whitespace-nowrap">
+          Karmela Ling
+         </td>
+         <td class="border border-black px-2 md:px-3 py-3 text-center align-middle whitespace-nowrap">
+          finance
+         </td>
+         <td class="border border-black px-2 md:px-3 py-3 text-center align-middle">
+          <img alt="Green XLS spreadsheet icon representing report content" class="mx-auto" height="28" src="https://storage.googleapis.com/a1aa/image/7bbba393-499d-47c8-c614-6f2c24eae0ff.jpg" width="20"/>
+         </td>
+         <td class="border border-black px-2 md:px-3 py-3 text-center align-middle whitespace-nowrap">
+          <button class="bg-blue-600 text-white font-extrabold text-[10px] md:text-[12px] px-4 md:px-5 py-1 rounded-full tracking-widest hover:bg-blue-700">
+           MORE INFO
+          </button>
+         </td>
+        </tr>
+        <tr>
+         <td class="border border-black px-2 md:px-3 py-3 text-center align-middle whitespace-nowrap">
+          BC02
+         </td>
+         <td class="border border-black px-2 md:px-3 py-3 text-center align-middle whitespace-nowrap">
+          Financial report
+         </td>
+         <td class="border border-black px-2 md:px-3 py-3 text-center align-middle whitespace-nowrap">
+          Ha Nguyen Ngoc
+         </td>
+         <td class="border border-black px-2 md:px-3 py-3 text-center align-middle whitespace-nowrap">
+          Income Statement
+         </td>
+         <td class="border border-black px-2 md:px-3 py-3 text-center align-middle">
+          <img alt="Green XLS spreadsheet icon representing report content" class="mx-auto" height="28" src="https://storage.googleapis.com/a1aa/image/7bbba393-499d-47c8-c614-6f2c24eae0ff.jpg" width="20"/>
+         </td>
+         <td class="border border-black px-2 md:px-3 py-3 text-center align-middle whitespace-nowrap">
+          <button class="bg-blue-600 text-white font-extrabold text-[10px] md:text-[12px] px-4 md:px-5 py-1 rounded-full tracking-widest hover:bg-blue-700">
+           MORE INFO
+          </button>
+         </td>
+        </tr>
+        <tr>
+         <td class="border border-black px-2 md:px-3 py-3 text-center align-middle whitespace-nowrap">
+          BC03
+         </td>
+         <td class="border border-black px-2 md:px-3 py-3 text-center align-middle whitespace-nowrap">
+          Financial report
+         </td>
+         <td class="border border-black px-2 md:px-3 py-3 text-center align-middle whitespace-nowrap">
+          JJessicLe
+         </td>
+         <td class="border border-black px-2 md:px-3 py-3 text-center align-middle whitespace-nowrap">
+          Balance Sheet
+         </td>
+         <td class="border border-black px-2 md:px-3 py-3 text-center align-middle">
+          <img alt="Green XLS spreadsheet icon representing report content" class="mx-auto" height="28" src="https://storage.googleapis.com/a1aa/image/7bbba393-499d-47c8-c614-6f2c24eae0ff.jpg" width="20"/>
+         </td>
+         <td class="border border-black px-2 md:px-3 py-3 text-center align-middle whitespace-nowrap">
+          <button class="bg-blue-600 text-white font-extrabold text-[10px] md:text-[12px] px-4 md:px-5 py-1 rounded-full tracking-widest hover:bg-blue-700">
+           MORE INFO
+          </button>
+         </td>
+        </tr>
+        <tr>
+         <td class="border border-black px-2 md:px-3 py-3 text-center align-middle whitespace-nowrap">
+          ******
+         </td>
+         <td class="border border-black px-2 md:px-3 py-3 text-center align-middle whitespace-nowrap">
+          *********
+         </td>
+         <td class="border border-black px-2 md:px-3 py-3 text-center align-middle whitespace-nowrap">
+          ********
+         </td>
+         <td class="border border-black px-2 md:px-3 py-3 text-center align-middle whitespace-nowrap">
+          *********
+         </td>
+         <td class="border border-black px-2 md:px-3 py-3 text-center align-middle whitespace-nowrap">
+          *********
+         </td>
+         <td class="border border-black px-2 md:px-3 py-3 text-center align-middle whitespace-nowrap">
+          ********
+         </td>
+        </tr>
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <!-- Buttons -->
+    <div class="flex flex-col md:flex-row justify-end gap-4 md:gap-6 px-6 py-4 md:py-6">
+     <button class="bg-red-600 text-black font-extrabold text-[14px] md:text-[16px] px-6 py-2 rounded-sm border border-black hover:bg-red-700 w-full md:w-auto">
+      Reject
+     </button>
+     <button class="bg-green-400 text-black font-extrabold text-[14px] md:text-[16px] px-6 py-2 rounded-sm border border-black hover:bg-green-500 w-full md:w-auto">
+      Approval
+     </button>
+     <span class="font-extrabold text-[12px] text-black self-center select-none whitespace-nowrap">
+      (Finacial Manager)
+     </span>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

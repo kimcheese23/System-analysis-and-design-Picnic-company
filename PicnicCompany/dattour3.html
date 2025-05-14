@@ -1,0 +1,221 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Payment Information
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+      background-image: none;
+      background-color: transparent;
+      font-family: Arial, sans-serif;
+    }
+    .orbitron-font {
+      font-family: 'Orbitron', monospace;
+    }
+  </style>
+ </head>
+ <body>
+  <div class="min-h-screen flex flex-col items-center justify-center px-4 py-8" style="background-image: url('https://placehold.co/1920x1080?text=Background+Image'); background-size: cover; background-position: center;">
+   <!-- Progress bar -->
+   <div class="w-full max-w-5xl mb-8 select-none">
+    <div class="flex justify-center items-center space-x-12 text-xs sm:text-sm font-normal text-black/90">
+     <div class="flex flex-col items-center relative z-10">
+      <div class="w-7 h-7 rounded-full bg-yellow-300 text-black flex items-center justify-center text-sm font-semibold">
+       1
+      </div>
+      <span class="mt-1">
+       Contact Information
+      </span>
+     </div>
+     <div class="flex flex-col items-center relative z-10">
+      <div class="w-7 h-7 rounded-full bg-yellow-300 text-black flex items-center justify-center text-sm font-semibold">
+       2
+      </div>
+      <span class="mt-1">
+       Tour Booking Information
+      </span>
+     </div>
+     <div class="flex flex-col items-center relative z-10">
+      <div class="w-7 h-7 rounded-full bg-gray-300 text-black flex items-center justify-center text-sm font-semibold">
+       3
+      </div>
+      <span class="mt-1">
+       Payment Information
+      </span>
+     </div>
+     <div class="flex flex-col items-center relative z-10">
+      <div class="w-7 h-7 rounded-full bg-gray-300 text-black flex items-center justify-center text-sm font-semibold">
+       4
+      </div>
+      <span class="mt-1">
+       Tour Booking Completed
+      </span>
+     </div>
+    </div>
+    <!-- Lines between circles -->
+    <div class="relative w-full max-w-5xl h-0.5 mt-2">
+     <div class="absolute top-1/2 left-[calc(12.5%)] right-[calc(75%)] h-0.5 bg-yellow-300 translate-y-[-50%]">
+     </div>
+     <div class="absolute top-1/2 left-[calc(25%)] right-[calc(50%)] h-0.5 bg-yellow-300 translate-y-[-50%]">
+     </div>
+     <div class="absolute top-1/2 left-[calc(50%)] right-[calc(25%)] h-0.5 bg-gray-300 translate-y-[-50%]">
+     </div>
+    </div>
+   </div>
+   <!-- Main container -->
+   <div class="bg-white max-w-5xl w-full rounded-sm relative flex flex-col md:flex-row border border-gray-200" style="min-height: 420px;">
+    <!-- Left form -->
+    <form autocomplete="off" class="flex flex-col gap-4 p-6 md:p-8 w-full md:w-1/2 border-r border-gray-300">
+     <h2 class="text-2xl font-extrabold mb-2">
+      Payment Information
+      <span class="text-red-600">
+       *
+      </span>
+     </h2>
+     <label class="block font-bold text-sm" for="fullname">
+      Full name
+      <span class="text-red-600">
+       *
+      </span>
+     </label>
+     <input class="w-full bg-gray-100 border border-gray-300 rounded-sm px-3 py-2 text-sm" id="fullname" required="" type="text" value="Vu Tran Phuong Anh"/>
+     <label class="block font-bold text-sm" for="phone">
+      Phone number
+      <span class="text-red-600">
+       *
+      </span>
+     </label>
+     <input class="w-full bg-gray-100 border border-gray-300 rounded-sm px-3 py-2 text-sm" id="phone" required="" type="text" value="0987654321"/>
+     <label class="block font-bold text-sm" for="email">
+      Email
+      <span class="text-red-600">
+       *
+      </span>
+     </label>
+     <input class="w-full bg-gray-100 border border-gray-300 rounded-sm px-3 py-2 text-sm" id="email" required="" type="email" value="panh03092gmail.com"/>
+     <label class="block font-bold text-sm" for="address">
+      Address
+      <span class="text-red-600">
+       *
+      </span>
+     </label>
+     <input class="w-full bg-gray-100 border border-gray-300 rounded-sm px-3 py-2 text-sm" id="address" required="" type="text" value="11 Le Van Luong, Nha Be District, Ho Chi Minh City"/>
+     <label class="block font-bold text-sm" for="beginning-date">
+      Beginning date
+      <span class="text-red-600">
+       *
+      </span>
+     </label>
+     <input class="w-full bg-gray-100 border border-gray-300 rounded-sm px-3 py-2 text-sm" id="beginning-date" required="" type="text" value="01/04/2025"/>
+     <label class="block font-bold text-sm" for="number-days">
+      Number of days
+      <span class="text-red-600">
+       *
+      </span>
+     </label>
+     <input class="w-full bg-gray-100 border border-gray-300 rounded-sm px-3 py-2 text-sm" id="number-days" required="" type="number" value="5"/>
+     <button class="mt-auto self-end bg-gray-900 text-white px-6 py-2 rounded-sm text-lg font-medium flex items-center gap-2 hover:bg-gray-800 transition" type="submit">
+      Next
+      <i class="fas fa-arrow-right">
+      </i>
+     </button>
+    </form>
+    <!-- Right info panel -->
+    <div class="w-full md:w-1/2 p-6 md:p-8 flex flex-col">
+     <div class="flex justify-between items-center mb-2">
+      <img alt="Logo of Picnic Company with a small planet and airplane icon" class="h-12 object-contain" height="60" src="https://storage.googleapis.com/a1aa/image/676eaaa1-0625-4b61-b9b3-65b057aa3260.jpg" width="160"/>
+      <button aria-label="Close" class="text-black text-2xl font-bold leading-none hover:text-gray-700">
+       ×
+      </button>
+     </div>
+     <img alt="A scenic mountain river valley landscape with blue sky and clouds" class="rounded-xl w-full object-cover mb-4" height="180" src="https://storage.googleapis.com/a1aa/image/06529b06-5915-48a7-446b-cf694864f0fc.jpg" style="max-height: 180px;" width="400"/>
+     <p class="text-center text-sm mb-1">
+      <span class="font-bold">
+       ID tour:
+      </span>
+      T01
+     </p>
+     <h3 class="text-center font-extrabold text-lg mb-4">
+      Ha Giang Tourism - Camping &amp; Bonfire
+     </h3>
+     <hr class="border-gray-300 mb-4"/>
+     <div class="flex justify-between text-sm mb-4 px-2">
+      <div class="text-left">
+       <p>
+        Beginning
+       </p>
+       <p class="font-bold">
+        01/04/2025
+       </p>
+      </div>
+      <div class="flex items-center justify-center text-lg font-bold">
+       <i class="fas fa-arrow-right">
+       </i>
+      </div>
+      <div class="text-right">
+       <p>
+        Ending
+       </p>
+       <p class="font-bold">
+        06/04/2025
+       </p>
+      </div>
+      <div class="text-right font-bold">
+       <p>
+        Order Date:
+        <span class="font-normal">
+         28/03/2025
+        </span>
+       </p>
+       <p>
+        Paymnet type:
+        <span class="font-normal">
+         Banking
+        </span>
+       </p>
+      </div>
+     </div>
+     <div class="flex border-t border-l border-r border-gray-300 text-sm">
+      <div class="flex-1 border-r border-gray-300 p-2">
+       Number of children:
+       <span class="font-bold">
+        0
+       </span>
+      </div>
+      <div class="flex-1 border-r border-gray-300 p-2 text-right">
+       0,000
+       <span class="ml-1">
+        VND
+       </span>
+      </div>
+      <div class="flex-1 p-2 text-right">
+       5,850,000
+       <span class="ml-1">
+        VND
+       </span>
+      </div>
+     </div>
+     <div class="flex justify-end items-center mt-2 px-2 text-sm">
+      <div class="flex-1 text-right pr-4">
+       Total
+      </div>
+      <div class="font-extrabold text-lg">
+       5.850.000 VNĐ
+      </div>
+     </div>
+     <button aria-label="Pay Now" class="mt-4 self-end bg-blue-600 text-white px-5 py-2 rounded-sm text-sm font-semibold flex items-center gap-2 hover:bg-blue-700 transition">
+      PAY NOW
+      <i class="fas fa-hand-pointer">
+      </i>
+     </button>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

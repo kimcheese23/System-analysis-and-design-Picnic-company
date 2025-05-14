@@ -1,0 +1,319 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Customer Management
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: 'Inter', sans-serif;
+    }
+    /* Override Tailwind's default scrollbar for the tables */
+    .scrollbar-thin::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    .scrollbar-thin::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    .scrollbar-thin::-webkit-scrollbar-thumb {
+      background-color: #999;
+      border-radius: 10px;
+      border: 2px solid transparent;
+      background-clip: content-box;
+    }
+  </style>
+ </head>
+ <body class="m-0 p-0 bg-gradient-to-r from-[#e6f3e6] to-[#f0f9f0] min-h-screen flex">
+  <!-- Sidebar -->
+  <aside class="w-44 flex-shrink-0 flex flex-col divide-y divide-white/50">
+   <div class="bg-gradient-to-b from-[#f9d9d0] to-[#fff7e0] p-3 flex flex-col items-center gap-2">
+    <img alt="Round white logo with a small airplane icon on top" class="w-10 h-10" height="40" src="https://storage.googleapis.com/a1aa/image/0748fbb7-602e-442e-3fae-824905ecfbc1.jpg" width="40"/>
+    <span class="text-xs text-[#4a4a4a] select-none font-semibold">
+     PICNIC COMPANY
+    </span>
+   </div>
+   <button class="flex items-center gap-2 p-3 text-[#4a4a4a] text-[12px] leading-[1.2] whitespace-pre-wrap select-none font-semibold">
+    <i class="fas fa-user-tie text-xl">
+    </i>
+    Human resources
+    <br/>
+    management
+   </button>
+   <button class="flex items-center gap-2 p-3 text-white text-[12px] leading-[1.2] whitespace-pre-wrap select-none bg-gradient-to-r from-[#4a7dbd] to-[#a3c0e3] font-semibold">
+    <i class="fas fa-users-cog text-xl">
+    </i>
+    Customer
+    <br/>
+    management
+   </button>
+   <button class="flex items-center gap-2 p-3 text-[#4a4a4a] text-[12px] leading-[1.2] whitespace-pre-wrap select-none bg-gradient-to-b from-[#f9d9d0] to-[#fff7e0] font-semibold">
+    <i class="fas fa-shopping-basket text-xl">
+    </i>
+    Excursion tour
+    <br/>
+    management
+   </button>
+   <button class="flex items-center gap-2 p-3 text-[#4a4a4a] text-[12px] leading-[1.2] whitespace-pre-wrap select-none bg-gradient-to-b from-[#fff7e0] to-[#f9f9d0] font-semibold">
+    <i class="fas fa-hand-holding-usd text-xl">
+    </i>
+    Financial
+    <br/>
+    management
+   </button>
+   <button class="flex items-center gap-2 p-3 text-[#4a4a4a] text-[12px] leading-[1.2] whitespace-pre-wrap select-none bg-gradient-to-b from-[#f9f9d0] to-[#fff7e0] font-semibold">
+    <i class="fas fa-hands-helping text-xl">
+    </i>
+    Service
+    <br/>
+    provider/partner
+    <br/>
+    management
+   </button>
+  </aside>
+  <!-- Main content -->
+  <main class="flex-1 p-4 flex flex-col gap-4">
+   <!-- Top right icons -->
+   <div class="flex justify-end items-center gap-6 text-[#4a4a4a] text-sm select-none font-medium">
+    <div class="relative flex items-center gap-1 cursor-pointer">
+     <i class="fas fa-bell text-lg">
+     </i>
+     <span class="absolute -top-1 -right-2 w-4 h-4 bg-red-600 rounded-full text-[10px] text-white font-bold flex items-center justify-center leading-none">
+      1
+     </span>
+     Notification
+    </div>
+    <div class="flex items-center gap-1 cursor-pointer">
+     <i class="fas fa-cog text-lg">
+     </i>
+     Setting
+    </div>
+    <div class="flex items-center gap-1 cursor-pointer">
+     <i class="fas fa-user-tie text-lg">
+     </i>
+     Management
+    </div>
+   </div>
+   <!-- Search and export -->
+   <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 items-center">
+    <div class="flex items-center border border-black rounded-sm flex-grow max-w-full sm:max-w-[600px] h-12 px-3">
+     <i class="fas fa-search text-lg">
+     </i>
+     <input class="flex-grow ml-2 text-base font-sans outline-none" placeholder="Find ID customer" type="text"/>
+     <select aria-label="Select filter" class="appearance-none border-l border-black pl-3 pr-6 h-full cursor-pointer">
+      <option>
+       ▼
+      </option>
+     </select>
+     <button aria-label="Filter" class="ml-2 border border-black rounded-sm p-1 flex items-center justify-center cursor-pointer">
+      <i class="fas fa-filter">
+      </i>
+     </button>
+    </div>
+    <button class="flex items-center gap-2 bg-[#4ac45a] text-black font-sans font-normal text-base px-6 py-3 border border-black rounded-sm cursor-pointer select-none">
+     <i class="fas fa-share-square text-xl">
+     </i>
+     Export
+    </button>
+   </div>
+   <!-- Content box -->
+   <section class="border border-black p-4 flex flex-col sm:flex-row gap-4 max-w-full overflow-hidden">
+    <!-- Left side with back button and image -->
+    <div class="flex flex-col gap-4 flex-shrink-0 max-w-[280px]">
+     <button aria-label="Back" class="w-10 h-10 bg-black text-white rounded-full flex items-center justify-center cursor-pointer">
+      <i class="fas fa-arrow-left">
+      </i>
+     </button>
+     <img alt="Fantasy style realistic illustration of a thoughtful man in a navy blue suit with a red tie, sitting with his hand on his chin in a pensive pose" class="w-full h-auto" height="280" src="https://storage.googleapis.com/a1aa/image/60d1f6ad-878b-4838-449c-7f581046f0b6.jpg" width="280"/>
+    </div>
+    <!-- Right side with tables and user info -->
+    <div class="flex flex-col flex-grow gap-4 max-w-full overflow-hidden">
+     <!-- User info -->
+     <div class="mb-2 text-sm">
+      <p class="mb-1">
+       <span class="font-bold">
+        User ID:
+       </span>
+       <span class="font-normal">
+        D03
+       </span>
+      </p>
+      <p class="mb-1">
+       <span class="font-bold">
+        Full name:
+       </span>
+       <span class="font-normal">
+        Donal Trump
+       </span>
+      </p>
+      <p class="mb-1">
+       <span class="font-bold">
+        Email:
+       </span>
+       <span class="font-normal">
+        dn028@gmail.com
+       </span>
+      </p>
+      <p class="mb-1">
+       <span class="font-bold">
+        Contact:
+       </span>
+       <span class="font-normal">
+        088 788 9889
+       </span>
+      </p>
+      <p>
+       <span class="font-bold">
+        Address:
+       </span>
+       <span class="font-normal">
+        Thong Nhat, Q.1, TP.HCM
+       </span>
+      </p>
+     </div>
+     <!-- First table -->
+     <div class="border border-black overflow-y-auto max-h-40 scrollbar-thin" style="min-width: 100%;">
+      <table class="w-full border-collapse border border-black text-sm">
+       <thead class="bg-[#4ac45a] text-black font-bold text-xs">
+        <tr>
+         <th class="border border-black px-3 py-2 text-left">
+          Tour ID
+         </th>
+         <th class="border border-black px-3 py-2 text-left">
+          Tour’s name
+         </th>
+         <th class="border border-black px-3 py-2 text-left">
+          Start date
+         </th>
+         <th class="border border-black px-3 py-2 text-left">
+          Price
+         </th>
+         <th class="border border-black px-3 py-2 text-left">
+          Status
+         </th>
+        </tr>
+       </thead>
+       <tbody>
+        <tr>
+         <td class="border border-black px-3 py-2">
+          DL15
+         </td>
+         <td class="border border-black px-3 py-2">
+          Đà Lạt 3N2D
+         </td>
+         <td class="border border-black px-3 py-2">
+          15/05/2023
+         </td>
+         <td class="border border-black px-3 py-2">
+          8,900,000
+         </td>
+         <td class="border border-black px-3 py-2">
+          Hoàn thành
+         </td>
+        </tr>
+        <tr>
+         <td class="border border-black px-3 py-2">
+          NT20
+         </td>
+         <td class="border border-black px-3 py-2">
+          Nha Trang 4N3D
+         </td>
+         <td class="border border-black px-3 py-2">
+          20/11/2023
+         </td>
+         <td class="border border-black px-3 py-2">
+          12,500,000
+         </td>
+         <td class="border border-black px-3 py-2">
+          Đã hủy
+         </td>
+        </tr>
+        <tr>
+         <td class="border border-black px-3 py-2">
+          PQ10
+         </td>
+         <td class="border border-black px-3 py-2">
+          Phú Quốc 5N4D
+         </td>
+         <td class="border border-black px-3 py-2">
+          10/04/2025
+         </td>
+         <td class="border border-black px-3 py-2">
+          15,200,000
+         </td>
+         <td class="border border-black px-3 py-2">
+          Đang diễn ra
+         </td>
+        </tr>
+       </tbody>
+      </table>
+     </div>
+     <!-- Second table -->
+     <div class="border border-black overflow-y-auto max-h-40 scrollbar-thin" style="min-width: 100%;">
+      <table class="w-full border-collapse border border-black text-sm">
+       <thead class="bg-[#4ac45a] text-black font-bold text-xs">
+        <tr>
+         <th class="border border-black px-3 py-2 text-left">
+          Date
+         </th>
+         <th class="border border-black px-3 py-2 text-left">
+          Contents
+         </th>
+         <th class="border border-black px-3 py-2 text-left">
+          Rating
+         </th>
+        </tr>
+       </thead>
+       <tbody>
+        <tr>
+         <td class="border border-black px-3 py-2">
+          18/05/2023
+         </td>
+         <td class="border border-black px-3 py-2">
+          HDV nhiệt tình nhưng xe hơi cũ
+         </td>
+         <td class="border border-black px-3 py-2 flex items-center justify-center gap-1">
+          4
+          <i class="fas fa-star text-yellow-400">
+          </i>
+         </td>
+        </tr>
+        <tr>
+         <td class="border border-black px-3 py-2">
+          25/11/2023
+         </td>
+         <td class="border border-black px-3 py-2">
+          Khách sạn không đúng tiêu chuẩn sao
+         </td>
+         <td class="border border-black px-3 py-2 flex items-center justify-center gap-1">
+          3
+          <i class="fas fa-star text-yellow-400">
+          </i>
+         </td>
+        </tr>
+        <tr>
+         <td class="border border-black px-3 py-2">
+          05/04/2024
+         </td>
+         <td class="border border-black px-3 py-2">
+          Gửi thêm tài liệu về điểm đến
+         </td>
+         <td class="border border-black px-3 py-2 flex items-center justify-center gap-1">
+          5
+          <i class="fas fa-star text-yellow-400">
+          </i>
+         </td>
+        </tr>
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </section>
+  </main>
+ </body>
+</html>

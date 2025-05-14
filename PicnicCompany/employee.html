@@ -1,0 +1,256 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Picnic Company HR Management
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+ </head>
+ <body class="min-h-screen bg-gradient-to-r from-[#e6e9e7] via-[#f0f9f0] to-[#f9f7f2] flex flex-col md:flex-row">
+  <!-- Sidebar -->
+  <aside class="w-full md:w-60 border-r border-white flex flex-col">
+   <div class="flex items-center gap-2 px-4 py-3 bg-gradient-to-b from-[#d3d9e9] to-[#7ea1d9] border-b border-white">
+    <img alt="Picnic Company logo, white round shape with airplane icon" class="w-10 h-10" height="40" src="https://storage.googleapis.com/a1aa/image/cca1d489-ad60-46a8-09e4-4994b6cbf207.jpg" width="40"/>
+    <span class="text-white text-sm tracking-widest font-semibold">
+     PICNIC COMPANY
+    </span>
+   </div>
+   <nav class="flex flex-col divide-y divide-white">
+    <a class="flex items-center gap-2 px-4 py-6 bg-[#5a7fcf] text-white border-b border-white font-semibold text-sm" href="#">
+     <i class="fas fa-user-tie text-xl">
+     </i>
+     <span>
+      Human resources management
+     </span>
+    </a>
+    <a class="flex items-center gap-2 px-4 py-6 bg-gradient-to-b from-[#f7e9b7] to-[#f9d9b7] border-b border-white text-sm font-semibold text-white drop-shadow-[0_0_1px_black]" href="#">
+     <i class="fas fa-users text-xl">
+     </i>
+     <span>
+      Customer management
+     </span>
+    </a>
+    <a class="flex items-center gap-2 px-4 py-6 bg-gradient-to-b from-[#f9f0b7] to-[#f9cdb7] border-b border-white text-sm font-semibold text-white drop-shadow-[0_0_1px_black]" href="#">
+     <i class="fas fa-shopping-basket text-xl">
+     </i>
+     <span>
+      Excursion tour management
+     </span>
+    </a>
+    <a class="flex items-center gap-2 px-4 py-6 bg-gradient-to-b from-[#f9f9b7] to-[#f9bfb7] border-b border-white text-sm font-semibold text-white drop-shadow-[0_0_1px_black]" href="#">
+     <i class="fas fa-hand-holding-usd text-xl">
+     </i>
+     <span>
+      Financial management
+     </span>
+    </a>
+    <a class="flex items-center gap-2 px-4 py-6 bg-gradient-to-b from-[#f9f9b7] to-[#f9bfb7] text-sm font-semibold text-white drop-shadow-[0_0_1px_black]" href="#">
+     <i class="fas fa-handshake text-xl">
+     </i>
+     <span>
+      Service provider/partner management
+     </span>
+    </a>
+   </nav>
+  </aside>
+  <!-- Main content -->
+  <main class="flex-1 p-4 md:p-6 bg-gradient-to-b from-[#f0f9f0] to-[#e6e9e7]">
+   <!-- Top right icons -->
+   <div class="flex justify-end items-center gap-6 text-gray-600 text-xs select-none mb-4 font-medium">
+    <div class="relative flex items-center gap-1 cursor-pointer">
+     <i class="fas fa-bell">
+     </i>
+     <span class="absolute -top-1 -right-2 bg-red-600 text-white rounded-full text-[8px] w-3 h-3 flex items-center justify-center font-bold">
+      1
+     </span>
+     <span>
+      Notification
+     </span>
+    </div>
+    <div class="flex items-center gap-1 cursor-pointer">
+     <i class="fas fa-cog">
+     </i>
+     <span>
+      Setting
+     </span>
+    </div>
+    <div class="flex items-center gap-1 cursor-pointer">
+     <i class="fas fa-user">
+     </i>
+     <span>
+      Management
+     </span>
+    </div>
+   </div>
+   <!-- Search and export -->
+   <div class="flex flex-col md:flex-row md:items-center md:gap-4 mb-4">
+    <div class="flex items-center border border-black rounded-md flex-1 max-w-full md:max-w-[600px] px-3 py-2 mb-3 md:mb-0">
+     <i class="fas fa-search text-lg">
+     </i>
+     <input class="flex-1 ml-2 outline-none text-base font-normal" placeholder="Find ID employee" type="text"/>
+     <select aria-label="Select filter" class="appearance-none border-none outline-none bg-transparent cursor-pointer ml-2 text-lg">
+      <option>
+       ▼
+      </option>
+     </select>
+     <i class="fas fa-filter ml-2 cursor-pointer">
+     </i>
+    </div>
+    <button class="flex items-center gap-2 bg-[#4bbf67] text-black font-normal text-base px-6 py-3 rounded-md hover:bg-[#3da653] transition-colors">
+     <i class="fas fa-upload text-xl">
+     </i>
+     Export
+    </button>
+   </div>
+   <!-- Table header -->
+   <table class="w-full border border-black border-collapse mb-0 text-sm">
+    <thead>
+     <tr class="bg-white border border-black">
+      <th class="border border-black px-4 py-3 text-left font-semibold">
+       ID
+      </th>
+      <th class="border border-black px-4 py-3 text-left font-semibold">
+       Full name
+      </th>
+      <th class="border border-black px-4 py-3 text-left font-semibold">
+       Department
+      </th>
+      <th class="border border-black px-4 py-3 text-left font-semibold">
+       Position
+      </th>
+      <th class="border border-black px-4 py-3 text-left font-semibold">
+       Email
+      </th>
+      <th class="border border-black px-4 py-3 text-left font-semibold">
+       Address
+      </th>
+      <th class="border border-black px-4 py-3 text-left font-semibold">
+       Phone number
+      </th>
+     </tr>
+    </thead>
+    <tbody>
+     <tr class="bg-[#5a7fcf] text-black">
+      <td class="border border-black px-4 py-3">
+       E01
+      </td>
+      <td class="border border-black px-4 py-3">
+       Anh Vu
+      </td>
+      <td class="border border-black px-4 py-3 text-center leading-tight">
+       HR
+       <br/>
+       Department
+      </td>
+      <td class="border border-black px-4 py-3">
+       HR Staff
+      </td>
+      <td class="border border-black px-4 py-3">
+       ...@gmail.com
+      </td>
+      <td class="border border-black px-4 py-3">
+       ********
+      </td>
+      <td class="border border-black px-4 py-3">
+       123456789
+      </td>
+     </tr>
+    </tbody>
+   </table>
+   <!-- Profile and rating section -->
+   <section class="mt-6 flex flex-col md:flex-row md:items-center md:gap-6">
+    <img alt="Fantasy style realistic portrait of a young woman with long brown hair and a pink flower in her hair, wearing a soft blue and peach striped shirt" class="w-40 h-40 mx-auto md:mx-0 object-cover rounded-lg shadow-lg" height="160" src="https://storage.googleapis.com/a1aa/image/5b9c3f7c-4b47-4f8f-8b20-baa09770a8c5.jpg" width="160"/>
+    <div class="mt-4 md:mt-0 flex flex-col flex-1">
+     <p class="font-semibold text-base mb-1">
+      Data related:
+      <span class="font-normal">
+       Certification, Phone number
+      </span>
+      <i class="fas fa-link ml-1">
+      </i>
+     </p>
+     <table class="w-full max-w-full border border-black border-collapse overflow-y-auto max-h-40 md:max-h-48 scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-100 text-sm">
+      <thead>
+       <tr class="bg-[#4bbf67] text-black font-semibold">
+        <th class="border border-black px-4 py-2 text-left">
+         Date
+        </th>
+        <th class="border border-black px-4 py-2 text-left">
+         Contents
+        </th>
+        <th class="border border-black px-4 py-2 text-left">
+         Rating
+        </th>
+       </tr>
+      </thead>
+      <tbody>
+       <tr>
+        <td class="border border-black px-4 py-2">
+         18/05/2023
+        </td>
+        <td class="border border-black px-4 py-2">
+         Nhiệt tình, giao tiếp tốt, chủ động trong công việc
+        </td>
+        <td class="border border-black px-4 py-2 flex items-center gap-1">
+         4
+         <i class="fas fa-star text-yellow-400">
+         </i>
+        </td>
+       </tr>
+       <tr>
+        <td class="border border-black px-4 py-2">
+         25/11/2023
+        </td>
+        <td class="border border-black px-4 py-2">
+         Trễ deadline
+        </td>
+        <td class="border border-black px-4 py-2 flex items-center gap-1">
+         3
+         <i class="fas fa-star text-yellow-400">
+         </i>
+        </td>
+       </tr>
+       <tr>
+        <td class="border border-black px-4 py-2">
+         05/04/2024
+        </td>
+        <td class="border border-black px-4 py-2">
+         Đóng góp lớn cho công ty
+        </td>
+        <td class="border border-black px-4 py-2 flex items-center gap-1">
+         5
+         <i class="fas fa-star text-yellow-400">
+         </i>
+        </td>
+       </tr>
+      </tbody>
+     </table>
+     <div class="mt-4 flex items-center gap-2 text-xl font-semibold">
+      <span>
+       Rating
+      </span>
+      <i class="fas fa-star text-yellow-400">
+      </i>
+      <i class="fas fa-star text-yellow-400">
+      </i>
+      <i class="fas fa-star text-yellow-400">
+      </i>
+      <i class="fas fa-star text-gray-700">
+      </i>
+      <i class="fas fa-star text-gray-700">
+      </i>
+     </div>
+    </div>
+   </section>
+  </main>
+ </body>
+</html>

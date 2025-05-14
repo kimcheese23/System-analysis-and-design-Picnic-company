@@ -1,0 +1,216 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Tour Booking Complete
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   @import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+  </style>
+ </head>
+ <body class="min-h-screen bg-[url('https://placehold.co/600x400?text=Background+Image+of+Nature+Field+with+Grass+and+Trees')] bg-cover bg-center flex items-center justify-center p-4">
+  <div class="max-w-5xl w-full bg-white relative">
+   <!-- Top progress bar -->
+   <div class="flex justify-center items-center space-x-8 py-6">
+    <div class="flex items-center space-x-2">
+     <div class="w-8 h-8 rounded-full bg-yellow-300 border border-yellow-400 flex items-center justify-center text-sm font-semibold">
+      1
+     </div>
+     <span class="text-xs text-black">
+      Contact Information
+     </span>
+    </div>
+    <div class="flex items-center space-x-2">
+     <div class="w-8 h-8 rounded-full bg-yellow-300 border border-yellow-400 flex items-center justify-center text-sm font-semibold">
+      2
+     </div>
+     <span class="text-xs text-black">
+      Tour Booking Information
+     </span>
+    </div>
+    <div class="flex items-center space-x-2">
+     <div class="w-8 h-8 rounded-full bg-yellow-300 border border-yellow-400 flex items-center justify-center text-sm font-semibold">
+      3
+     </div>
+     <span class="text-xs text-black">
+      Payment Information
+     </span>
+    </div>
+    <div class="flex items-center space-x-2">
+     <div class="w-8 h-8 rounded-full bg-yellow-300 border border-yellow-400 flex items-center justify-center text-sm font-semibold">
+      4
+     </div>
+     <span class="text-xs text-black">
+      Tour Booking Completed
+     </span>
+    </div>
+   </div>
+   <!-- Main content container -->
+   <div class="flex flex-col md:flex-row border border-gray-300 bg-white relative" style="min-height: 480px">
+    <!-- Left form section -->
+    <form aria-label="Tour booking complete form" class="flex flex-col gap-4 p-6 md:w-1/2 border-r border-gray-300">
+     <h1 class="font-extrabold text-2xl mb-2">
+      Tour Booking Complete
+     </h1>
+     <label class="font-semibold" for="fullname">
+      Full name
+     </label>
+     <input class="bg-gray-200 px-3 py-2 border border-gray-300 rounded focus:outline-none" id="fullname" readonly="" type="text" value="Vu Tran Phuong Anh"/>
+     <label class="font-semibold" for="phone">
+      Phone number
+     </label>
+     <input class="bg-gray-200 px-3 py-2 border border-gray-300 rounded focus:outline-none" id="phone" readonly="" type="text" value="0987654321"/>
+     <label class="font-semibold" for="email">
+      Email
+     </label>
+     <input class="bg-gray-200 px-3 py-2 border border-gray-300 rounded focus:outline-none" id="email" readonly="" type="text" value="panh03092gmail.com"/>
+     <label class="font-semibold" for="address">
+      Address
+     </label>
+     <input class="bg-gray-200 px-3 py-2 border border-gray-300 rounded focus:outline-none" id="address" readonly="" type="text" value="11 Le Van Luong, Nha Be District, Ho Chi Minh City"/>
+     <label class="font-semibold" for="beginning-date">
+      Beginning date
+     </label>
+     <input class="bg-gray-200 px-3 py-2 border border-gray-300 rounded focus:outline-none" id="beginning-date" readonly="" type="text" value="01/04/2025"/>
+     <label class="font-semibold" for="days">
+      Number of days
+     </label>
+     <input class="bg-gray-200 px-3 py-2 border border-gray-300 rounded focus:outline-none" id="days" readonly="" type="text" value="5"/>
+    </form>
+    <!-- Right info section -->
+    <div class="md:w-1/2 p-6 flex flex-col">
+     <!-- Close icon top right -->
+     <button aria-label="Close" class="absolute top-4 right-4 text-black text-3xl font-bold leading-none" type="button">
+      <i class="fas fa-times">
+      </i>
+     </button>
+     <!-- Removed logo here -->
+     <!-- Tour image -->
+     <div class="mb-4 flex justify-center">
+      <img alt="Mountain valley with river and blue sky, rounded corners" class="rounded-xl object-cover" height="180" src="https://storage.googleapis.com/a1aa/image/49068906-5a92-4d3d-1b3f-b92ad4450c0f.jpg" width="400"/>
+     </div>
+     <!-- Tour title and IDs -->
+     <div class="flex justify-between items-center font-semibold text-base mb-2 px-2">
+      <div>
+       <span class="font-bold">
+        ID tour:
+       </span>
+       T01
+      </div>
+      <div class="text-center text-lg font-extrabold">
+       Ha Giang Tourism - Camping &amp; Bonfire
+      </div>
+      <div>
+       <span class="font-bold">
+        Order ID:
+       </span>
+       OD0001
+      </div>
+     </div>
+     <hr class="border-gray-300 mb-3"/>
+     <!-- Dates and order info -->
+     <div class="flex justify-between items-center mb-3 px-2 text-sm">
+      <div class="flex items-center space-x-2">
+       <div>
+        <div>
+         Beginning
+        </div>
+        <div class="font-bold">
+         01/04/2025
+        </div>
+       </div>
+       <i class="fas fa-arrow-right text-lg">
+       </i>
+       <div>
+        <div>
+         Ending
+        </div>
+        <div class="font-bold">
+         06/04/2025
+        </div>
+       </div>
+      </div>
+      <div class="text-sm font-semibold">
+       <div>
+        <span>
+         Order Date:
+        </span>
+        <span class="font-bold">
+         28/03/2025
+        </span>
+       </div>
+       <div>
+        <span>
+         Paymnet type:
+        </span>
+        <span class="font-bold">
+         Banking
+        </span>
+       </div>
+      </div>
+     </div>
+     <!-- Number of children and adults with prices -->
+     <div class="flex border border-gray-300 rounded mb-3 text-sm">
+      <div class="flex flex-col px-4 py-2 w-1/2 border-r border-gray-300">
+       <span>
+        Number of children:
+        <span class="font-bold">
+         0
+        </span>
+       </span>
+       <span>
+        Number of adults:
+        <span class="font-bold">
+         1
+        </span>
+       </span>
+      </div>
+      <div class="flex flex-col px-4 py-2 w-1/2 bg-gray-100 text-right">
+       <span>
+        0,000
+        <span class="inline-block ml-2">
+         VND
+        </span>
+       </span>
+       <span>
+        5,850,000
+        <span class="inline-block ml-2">
+         VND
+        </span>
+       </span>
+      </div>
+     </div>
+     <!-- Payment date and total payment -->
+     <div class="flex justify-between px-2 text-sm font-semibold">
+      <div class="text-center w-1/2">
+       <div>
+        Payment date
+       </div>
+       <div class="font-bold">
+        29/03/2025
+       </div>
+      </div>
+      <div class="text-center w-1/2">
+       <div>
+        Payment
+       </div>
+       <div class="font-extrabold text-lg">
+        5.850.000 VNĐ
+       </div>
+      </div>
+     </div>
+     <!-- Success button -->
+     <div class="mt-auto flex justify-center py-4">
+      <button class="bg-gray-800 text-white px-10 py-2 text-lg font-normal" type="button">
+       Success
+      </button>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

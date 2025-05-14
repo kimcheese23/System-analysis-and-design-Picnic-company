@@ -1,0 +1,421 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Service Contract
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: "Press Start 2P", cursive;
+    }
+  </style>
+ </head>
+ <body class="bg-[#f0f9e8] min-h-screen flex flex-col md:flex-row">
+  <!-- Left Sidebar -->
+  <aside class="w-full md:w-60 flex flex-col divide-y divide-white/50">
+   <div class="bg-[#e9f0e0] flex items-center justify-center p-3 border-b border-white/50">
+    <img alt="Round white logo with a small airplane icon on top" class="mr-2" height="40" src="https://storage.googleapis.com/a1aa/image/7a3d091c-0a63-4314-c063-f740d10ecfff.jpg" width="40"/>
+    <span class="text-[10px] text-black">
+     PICNIC COMPANY
+    </span>
+   </div>
+   <button class="flex items-center gap-2 p-4 border-b border-white/50 bg-[#f0f0d8] hover:bg-[#e0e0c0]">
+    <i class="fas fa-user-headset text-black text-xl">
+    </i>
+    <span class="text-[12px] text-black leading-tight">
+     Human resources
+     <br/>
+     management
+    </span>
+   </button>
+   <button class="flex items-center gap-2 p-4 border-b border-white/50 bg-[#fff7d0] hover:bg-[#fff0a0]">
+    <i class="fas fa-users text-black text-xl">
+    </i>
+    <span class="text-[12px] text-black leading-tight">
+     Customer
+     <br/>
+     management
+    </span>
+   </button>
+   <button class="flex items-center gap-2 p-4 border-b border-white/50 bg-[#fff0d0] hover:bg-[#ffe0a0]">
+    <i class="fas fa-basket-shopping text-black text-xl">
+    </i>
+    <span class="text-[12px] text-black leading-tight">
+     Excursion tour
+     <br/>
+     management
+    </span>
+   </button>
+   <button class="flex items-center gap-2 p-4 border-b border-white/50 bg-[#fff9c0] hover:bg-[#fff390]">
+    <i class="fas fa-hand-holding-usd text-black text-xl">
+    </i>
+    <span class="text-[12px] text-black leading-tight">
+     Financial
+     <br/>
+     management
+    </span>
+   </button>
+   <button class="flex items-center gap-2 p-4 bg-[#7a9cc9] hover:bg-[#5f7db0] text-white">
+    <i class="fas fa-hands-helping text-white text-xl">
+    </i>
+    <span class="text-[12px] leading-tight">
+     Service
+     <br/>
+     provider/partner
+     <br/>
+     management
+    </span>
+   </button>
+  </aside>
+  <!-- Main Content -->
+  <main class="flex-1 p-4 md:p-6 text-[#3a4a0a]">
+   <!-- Top right icons -->
+   <div class="flex justify-end items-center gap-6 mb-2 text-[12px] font-normal font-sans">
+    <div class="relative flex items-center gap-1 cursor-pointer select-none">
+     <i class="fas fa-bell">
+     </i>
+     <span class="absolute -top-1 -right-2 text-[9px] font-bold bg-red-600 text-white rounded-full w-4 h-4 flex items-center justify-center">
+      1
+     </span>
+     <span>
+      Notification
+     </span>
+    </div>
+    <div class="flex items-center gap-1 cursor-pointer select-none">
+     <i class="fas fa-cog">
+     </i>
+     <span>
+      Setting
+     </span>
+    </div>
+    <div class="flex items-center gap-1 cursor-pointer select-none">
+     <i class="fas fa-user">
+     </i>
+     <span>
+      Management
+     </span>
+    </div>
+   </div>
+   <!-- Title and date -->
+   <div class="flex justify-between items-center border-t border-b border-[#d6e0c3] py-2 mb-4">
+    <h1 class="text-xl font-extrabold text-[#3a4a0a]">
+     Service Contract
+    </h1>
+    <span class="text-sm font-normal font-sans">
+     ............, ngày ...... tháng ...... năm ......
+    </span>
+   </div>
+   <div class="flex flex-col md:flex-row gap-6">
+    <!-- Left text block -->
+    <section class="flex-1 text-[14px] font-sans leading-tight">
+     <p class="font-extrabold mb-1">
+      BÊN A : BÊN SỬ DỤNG DỊCH VỤ
+     </p>
+     <p>
+      Tên cơ quan : PICNIC COMPANY
+     </p>
+     <p>
+      Điện thoại: 123 456 789
+     </p>
+     <p>
+      Người đại diện theo pháp luật : Mr Hung
+     </p>
+     <p>
+      Chức vụ: Trưởng phòng sự kiện
+     </p>
+     <p>
+      Email (nếu có): congtydangoainhom8@gmail.com
+     </p>
+     <!-- Table -->
+     <div class="overflow-y-auto max-h-[180px] mt-4 border border-[#3a4a0a] w-full max-w-[480px]">
+      <table class="w-full border-collapse text-[12px] text-white">
+       <thead>
+        <tr class="bg-[#3a4a0a]">
+         <th class="border border-[#3a4a0a] p-2 text-center font-bold">
+          ID Contract
+         </th>
+         <th class="border border-[#3a4a0a] p-2 text-center font-bold">
+          Effective Date
+         </th>
+         <th class="border border-[#3a4a0a] p-2 text-center font-bold">
+          Expiration Date
+         </th>
+         <th class="border border-[#3a4a0a] p-2 text-center font-bold">
+          Contract value (VND)
+         </th>
+         <th class="border border-[#3a4a0a] p-2 text-center font-bold">
+          Status
+         </th>
+        </tr>
+       </thead>
+       <tbody>
+        <tr class="bg-[#5ea33a]">
+         <td class="border border-[#3a4a0a] p-2 font-bold text-center">
+          CT01
+         </td>
+         <td class="border border-[#3a4a0a] p-2 text-center">
+          15/04/2025
+         </td>
+         <td class="border border-[#3a4a0a] p-2 text-center">
+          18/04/2025
+         </td>
+         <td class="border border-[#3a4a0a] p-2 text-center">
+          12,800,000
+         </td>
+         <td class="border border-[#3a4a0a] p-2 text-center">
+          Confirmed
+         </td>
+        </tr>
+        <tr class="bg-[#3a4a0a]">
+         <td class="border border-[#3a4a0a] p-2 font-bold text-center">
+          CT02
+         </td>
+         <td class="border border-[#3a4a0a] p-2 text-center">
+          09/05/2025
+         </td>
+         <td class="border border-[#3a4a0a] p-2 text-center">
+          09/07/2025
+         </td>
+         <td class="border border-[#3a4a0a] p-2 text-center">
+          34,500,000
+         </td>
+         <td class="border border-[#3a4a0a] p-2 text-center whitespace-pre-line">
+          Pending
+          <br/>
+          Payment
+         </td>
+        </tr>
+        <tr class="bg-[#3a4a0a]">
+         <td class="border border-[#3a4a0a] p-2 font-bold text-center">
+          CT04
+         </td>
+         <td class="border border-[#3a4a0a] p-2 text-center">
+          09/05/2025
+         </td>
+         <td class="border border-[#3a4a0a] p-2 text-center">
+          09/07/2025
+         </td>
+         <td class="border border-[#3a4a0a] p-2 text-center">
+          6,900,000
+         </td>
+         <td class="border border-[#3a4a0a] p-2 text-center">
+          Cancelled
+         </td>
+        </tr>
+        <tr class="bg-[#3a4a0a]">
+         <td class="border border-[#3a4a0a] p-2 font-bold text-center">
+          CT03
+         </td>
+         <td class="border border-[#3a4a0a] p-2 text-center">
+          10/04/2025
+         </td>
+         <td class="border border-[#3a4a0a] p-2 text-center">
+          14/04/2025
+         </td>
+         <td class="border border-[#3a4a0a] p-2 text-center">
+          18,200,000
+         </td>
+         <td class="border border-[#3a4a0a] p-2 text-center">
+          Active
+         </td>
+        </tr>
+        <tr class="bg-[#3a4a0a]">
+         <td class="border border-[#3a4a0a] p-2 font-bold text-center">
+          CT04
+         </td>
+         <td class="border border-[#3a4a0a] p-2 text-center">
+          09/05/2025
+         </td>
+         <td class="border border-[#3a4a0a] p-2 text-center">
+          16/05/2025
+         </td>
+         <td class="border border-[#3a4a0a] p-2 text-center">
+          5,620,000
+         </td>
+         <td class="border border-[#3a4a0a] p-2 text-center">
+          Confirmed
+         </td>
+        </tr>
+       </tbody>
+      </table>
+     </div>
+    </section>
+    <!-- Right text block -->
+    <section class="flex-1 text-[14px] font-sans leading-tight">
+     <p class="font-extrabold mb-1">
+      BÊN B : BÊN CUNG ỨNG DỊCH VỤ
+     </p>
+     <p>
+      Tên doanh nghiệp: Khách sạn Biển Ngọc Đà Nẵng
+     </p>
+     <p>
+      Địa chỉ: 123 Võ Nguyên Giáp, Sơn Trà, Đà Nẵng
+     </p>
+     <p>
+      Người đại diện theo pháp luật : Trần Văn Hải
+     </p>
+     <p>
+      Chức vụ: Quản lý Đối tác
+     </p>
+     <p>
+      Điện thoại: 0236 3878 999
+     </p>
+     <p>
+      Email (nếu có)): partner@bienngochotel.co
+     </p>
+     <div class="mt-4 space-y-1 text-[16px] font-normal">
+      <div class="flex items-center gap-2">
+       <span>
+        Điều khoản 1:
+       </span>
+       <button class="flex items-center gap-1 bg-[#5ea33a] text-white text-[9px] font-bold px-2 py-[2px] rounded-full">
+        <span>
+         READ MORE
+        </span>
+        <i class="fas fa-angle-double-right text-[12px]">
+        </i>
+       </button>
+      </div>
+      <div class="flex items-center gap-2">
+       <span>
+        Điều khoản 2:
+       </span>
+       <button class="flex items-center gap-1 bg-[#5ea33a] text-white text-[9px] font-bold px-2 py-[2px] rounded-full">
+        <span>
+         READ MORE
+        </span>
+        <i class="fas fa-angle-double-right text-[12px]">
+        </i>
+       </button>
+      </div>
+      <div class="flex items-center gap-2">
+       <span>
+        Điều khoản 3:
+       </span>
+       <button class="flex items-center gap-1 bg-[#5ea33a] text-white text-[9px] font-bold px-2 py-[2px] rounded-full">
+        <span>
+         READ MORE
+        </span>
+        <i class="fas fa-angle-double-right text-[12px]">
+        </i>
+       </button>
+      </div>
+      <div class="flex items-center gap-2">
+       <span>
+        Điều khoản 4:
+       </span>
+       <button class="flex items-center gap-1 bg-[#5ea33a] text-white text-[9px] font-bold px-2 py-[2px] rounded-full">
+        <span>
+         READ MORE
+        </span>
+        <i class="fas fa-angle-double-right text-[12px]">
+        </i>
+       </button>
+      </div>
+      <div class="flex items-center gap-2">
+       <span>
+        Điều khoản 5:
+       </span>
+       <button class="flex items-center gap-1 bg-[#5ea33a] text-white text-[9px] font-bold px-2 py-[2px] rounded-full">
+        <span>
+         READ MORE
+        </span>
+        <i class="fas fa-angle-double-right text-[12px]">
+        </i>
+       </button>
+      </div>
+      <div class="flex items-center gap-2">
+       <span>
+        Điều khoản 6:
+       </span>
+       <button class="flex items-center gap-1 bg-[#5ea33a] text-white text-[9px] font-bold px-2 py-[2px] rounded-full">
+        <span>
+         READ MORE
+        </span>
+        <i class="fas fa-angle-double-right text-[12px]">
+        </i>
+       </button>
+      </div>
+      <div class="flex items-center gap-2">
+       <span>
+        Điều khoản 7:
+       </span>
+       <button class="flex items-center gap-1 bg-[#5ea33a] text-white text-[9px] font-bold px-2 py-[2px] rounded-full">
+        <span>
+         READ MORE
+        </span>
+        <i class="fas fa-angle-double-right text-[12px]">
+        </i>
+       </button>
+      </div>
+      <div class="flex items-center gap-2">
+       <span>
+        Điều khoản 8:
+       </span>
+       <button class="flex items-center gap-1 bg-[#5ea33a] text-white text-[9px] font-bold px-2 py-[2px] rounded-full">
+        <span>
+         READ MORE
+        </span>
+        <i class="fas fa-angle-double-right text-[12px]">
+        </i>
+       </button>
+      </div>
+      <div class="flex items-center gap-2">
+       <span>
+        Điều khoản 9:
+       </span>
+       <button class="flex items-center gap-1 bg-[#5ea33a] text-white text-[9px] font-bold px-2 py-[2px] rounded-full">
+        <span>
+         READ MORE
+        </span>
+        <i class="fas fa-angle-double-right text-[12px]">
+        </i>
+       </button>
+      </div>
+      <div class="flex items-center gap-2">
+       <span>
+        Điều khoản 10:
+       </span>
+       <button class="flex items-center gap-1 bg-[#5ea33a] text-white text-[9px] font-bold px-2 py-[2px] rounded-full">
+        <span>
+         READ MORE
+        </span>
+        <i class="fas fa-angle-double-right text-[12px]">
+        </i>
+       </button>
+      </div>
+      <div class="flex items-center gap-2">
+       <span>
+        Điều khoản 11:
+       </span>
+       <button class="flex items-center gap-1 bg-[#5ea33a] text-white text-[9px] font-bold px-2 py-[2px] rounded-full">
+        <span>
+         READ MORE
+        </span>
+        <i class="fas fa-angle-double-right text-[12px]">
+        </i>
+       </button>
+      </div>
+      <div class="flex items-center gap-2">
+       <span>
+        Điều khoản 12:
+       </span>
+       <button class="flex items-center gap-1 bg-[#5ea33a] text-white text-[9px] font-bold px-2 py-[2px] rounded-full">
+        <span>
+         READ MORE
+        </span>
+        <i class="fas fa-angle-double-right text-[12px]">
+        </i>
+       </button>
+      </div>
+     </div>
+    </section>
+   </div>
+  </main>
+ </body>
+</html>

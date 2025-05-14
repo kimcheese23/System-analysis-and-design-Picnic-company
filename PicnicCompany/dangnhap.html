@@ -1,0 +1,89 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Login Picnic Company
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&amp;display=swap" rel="stylesheet"/>
+  <style>
+   .font-orbitron {
+      font-family: 'Orbitron', monospace;
+    }
+  </style>
+ </head>
+ <body class="min-h-screen flex flex-col md:flex-row">
+  <!-- Left side -->
+  <div class="flex flex-col justify-center items-center w-full md:w-1/2 bg-white px-8 py-16">
+   <h1 class="font-extrabold text-3xl mb-10 select-none">
+    Login
+   </h1>
+   <form class="w-full max-w-md space-y-6" onsubmit="return false">
+    <input class="w-full bg-[#f6f5f5] rounded-full py-4 px-6 text-black text-base placeholder-black placeholder-opacity-70 focus:outline-none" placeholder="User" type="text"/>
+    <input class="w-full bg-[#f6f5f5] rounded-full py-4 px-6 text-black text-base placeholder-black placeholder-opacity-70 focus:outline-none" placeholder="Email" type="email"/>
+    <div class="relative">
+     <input class="w-full bg-[#f6f5f5] rounded-full py-4 px-6 pr-14 text-black text-base placeholder-black placeholder-opacity-70 focus:outline-none" placeholder="Password" type="password"/>
+     <i aria-hidden="true" class="fas fa-eye-slash absolute right-6 top-1/2 -translate-y-1/2 text-black text-opacity-70 cursor-pointer">
+     </i>
+    </div>
+    <div class="flex justify-between items-center text-sm text-black text-opacity-90 mb-6">
+     <label class="flex items-center space-x-2 font-semibold select-none cursor-pointer">
+      <input class="w-4 h-4 border border-black rounded-sm" type="checkbox"/>
+      <span>
+       Remember me
+      </span>
+     </label>
+     <button class="text-black text-opacity-90 font-normal cursor-default select-none" disabled="" tabindex="-1" type="button">
+      Forrgot password?
+     </button>
+    </div>
+    <button class="w-full bg-[#9bb9d9] rounded-full py-4 font-extrabold text-white text-lg hover:bg-[#8aa7cc] transition-colors" type="submit">
+     Login
+    </button>
+   </form>
+   <p class="mt-6 text-center text-black text-opacity-90 text-sm select-none">
+    or use your account
+   </p>
+   <div aria-label="Social media login options" class="mt-4 flex justify-center space-x-6 bg-[#f6f5f5] rounded-md py-2 px-6 max-w-xs w-full">
+    <button aria-label="Login with Facebook" class="w-10 h-10 rounded-full border-2 border-black flex items-center justify-center text-black text-opacity-90 hover:bg-black hover:text-white transition-colors">
+     <i class="fab fa-facebook-f text-lg">
+     </i>
+    </button>
+    <button aria-label="Login with YouTube" class="w-10 h-10 rounded-full border-2 border-black flex items-center justify-center text-black text-opacity-90 hover:bg-black hover:text-white transition-colors">
+     <i class="fab fa-youtube text-lg">
+     </i>
+    </button>
+    <button aria-label="Login with LinkedIn" class="w-10 h-10 rounded-full border-2 border-black flex items-center justify-center text-black text-opacity-90 hover:bg-black hover:text-white transition-colors">
+     <i class="fab fa-linkedin-in text-lg">
+     </i>
+    </button>
+   </div>
+  </div>
+  <!-- Right side -->
+  <div class="relative w-full md:w-1/2 h-[600px] md:h-auto">
+   <img alt="Picnic table on a concrete slab in a green park with a large tree and a lake in the background under a partly cloudy sky" class="w-full h-full object-cover" decoding="async" height="600" loading="lazy" src="https://storage.googleapis.com/a1aa/image/7da30dc4-aff3-47c3-7ab2-34ab7b9052fc.jpg" width="600"/>
+   <div class="absolute inset-0 bg-black bg-opacity-30 flex flex-col justify-center items-center px-6 text-center text-white">
+    <h3 class="font-extrabold text-4xl md:text-5xl leading-tight mb-3 select-none">
+     Start your
+     <br/>
+     journey now
+    </h3>
+    <p class="text-base md:text-lg max-w-md mb-10 select-none">
+     if you don't have an account yet join us
+     <br/>
+     and start your journey
+    </p>
+    <button aria-label="Register" class="bg-white bg-opacity-30 backdrop-blur-sm rounded-full py-4 px-20 text-white text-opacity-80 font-mono text-lg tracking-widest flex items-center space-x-3 hover:bg-opacity-40 transition-colors select-none">
+     <span>
+      Register
+     </span>
+     <i class="fas fa-arrow-right">
+     </i>
+    </button>
+   </div>
+  </div>
+ </body>
+</html>

@@ -1,0 +1,168 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Tour Booking Information
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: 'Roboto', sans-serif;
+    }
+  </style>
+ </head>
+ <body class="relative min-h-screen bg-[url('https://placehold.co/1920x1080?text=Background+Image+of+Field+and+Trees')] bg-cover bg-center bg-no-repeat">
+  <!-- Progress bar container -->
+  <div class="max-w-5xl mx-auto pt-10 px-4">
+   <div class="flex justify-between items-center relative max-w-4xl mx-auto">
+    <!-- Line behind circles -->
+    <div class="absolute top-1/2 left-0 right-0 -translate-y-1/2 h-[2px] bg-yellow-300 z-0">
+    </div>
+    <!-- Circles and numbers -->
+    <div class="flex justify-between w-full relative z-10">
+     <div class="flex flex-col items-center w-1/4">
+      <div class="w-8 h-8 rounded-full bg-yellow-300 border border-yellow-300 flex items-center justify-center text-black font-semibold text-sm">
+       1
+      </div>
+      <span class="mt-2 text-xs text-black">
+       Contact Information
+      </span>
+     </div>
+     <div class="flex flex-col items-center w-1/4">
+      <div class="w-8 h-8 rounded-full bg-gray-300 border border-gray-300 flex items-center justify-center text-black font-semibold text-sm">
+       2
+      </div>
+      <span class="mt-2 text-xs text-black">
+       Tour Booking Information
+      </span>
+     </div>
+     <div class="flex flex-col items-center w-1/4">
+      <div class="w-8 h-8 rounded-full bg-gray-300 border border-gray-300 flex items-center justify-center text-black font-semibold text-sm">
+       3
+      </div>
+      <span class="mt-2 text-xs text-black">
+       Payment Information
+      </span>
+     </div>
+     <div class="flex flex-col items-center w-1/4">
+      <div class="w-8 h-8 rounded-full bg-gray-300 border border-gray-300 flex items-center justify-center text-black font-semibold text-sm">
+       4
+      </div>
+      <span class="mt-2 text-xs text-black">
+       Tour Booking Completed
+      </span>
+     </div>
+    </div>
+   </div>
+  </div>
+  <!-- Main white container -->
+  <div class="max-w-5xl mx-auto bg-white mt-8 p-8 relative" style="min-width: 320px; max-width: 900px">
+   <!-- Close icon top right -->
+   <button aria-label="Close" class="absolute top-6 right-6 text-black text-3xl font-bold leading-none" type="button">
+    <i class="fas fa-times">
+    </i>
+   </button>
+   <div class="flex justify-between items-center mb-8">
+    <h2 class="text-2xl font-extrabold leading-tight">
+     Tour Booking Information
+    </h2>
+    <img alt="Picnic Company logo with whale icon and text" class="h-12 object-contain" height="50" src="https://storage.googleapis.com/a1aa/image/f2a8ca25-6c18-4cc7-e664-49b7540c2ca7.jpg" width="150"/>
+   </div>
+   <form class="space-y-6">
+    <div class="flex flex-wrap gap-x-6 gap-y-4">
+     <div class="flex-1 min-w-[220px]">
+      <label class="block font-bold mb-1" for="fullName">
+       Full name
+       <span class="text-red-600">
+        *
+       </span>
+      </label>
+      <input class="w-full border border-gray-200 bg-gray-100 text-gray-500 placeholder-gray-400 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-300" id="fullName" name="fullName" placeholder="Full name" type="text"/>
+     </div>
+     <div class="flex-1 min-w-[220px]">
+      <label class="block font-bold mb-1" for="phoneNumber">
+       Phone number
+       <span class="text-red-600">
+        *
+       </span>
+      </label>
+      <input class="w-full border border-gray-200 bg-gray-100 text-gray-500 placeholder-gray-400 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-300" id="phoneNumber" name="phoneNumber" placeholder="Phone number" type="tel"/>
+     </div>
+     <div class="flex-1 min-w-[220px]">
+      <label class="block font-bold mb-1" for="email">
+       Email
+       <span class="text-red-600">
+        *
+       </span>
+      </label>
+      <input class="w-full border border-gray-200 bg-gray-100 text-gray-500 placeholder-gray-400 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-300" id="email" name="email" placeholder="Email" type="email"/>
+     </div>
+    </div>
+    <div class="flex flex-wrap gap-x-6 gap-y-4 items-center">
+     <div class="flex-1 min-w-[300px]">
+      <label class="block font-bold mb-1" for="address">
+       Address
+       <span class="text-red-600">
+        *
+       </span>
+      </label>
+      <input class="w-full border border-gray-200 bg-gray-100 text-gray-500 placeholder-gray-400 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-300" id="address" name="address" placeholder="Address" type="text"/>
+     </div>
+    </div>
+    <div class="flex flex-wrap gap-x-6 gap-y-4">
+     <div class="flex-1 min-w-[300px]">
+      <label class="block font-bold mb-1" for="adults">
+       Number of adults
+       <span class="text-red-600">
+        *
+       </span>
+       <span class="font-normal text-gray-500">
+        ( Aged 12 and over )
+       </span>
+      </label>
+      <input class="w-full border border-gray-200 bg-gray-100 text-gray-500 placeholder-gray-400 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-300 appearance-none" id="adults" min="1" name="adults" placeholder="1" type="number" value="1"/>
+     </div>
+     <div class="flex-1 min-w-[300px]">
+      <label class="block font-bold mb-1" for="children">
+       Number of children
+       <span class="font-normal text-gray-500">
+        ( Aged 3 to 11 )
+       </span>
+      </label>
+      <input class="w-full border border-gray-200 bg-gray-100 text-gray-400 placeholder-gray-400 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-300 appearance-none" id="children" min="0" name="children" placeholder="Number of children ( Aged 3 to 11 )" type="number"/>
+     </div>
+    </div>
+    <div class="flex flex-wrap gap-x-6 gap-y-4 mt-6">
+     <label class="flex flex-col items-center justify-center border border-gray-400 rounded-lg w-full max-w-[280px] h-28 cursor-pointer select-none" for="uploadAdultId">
+      <i class="fas fa-image text-2xl mb-2">
+      </i>
+      <span class="text-center text-sm">
+       Upload Identification Card
+      </span>
+      <input class="hidden" id="uploadAdultId" type="file"/>
+     </label>
+     <label class="flex flex-col items-center justify-center border border-gray-400 rounded-lg w-full max-w-[280px] h-28 cursor-pointer select-none" for="uploadChildId">
+      <i class="fas fa-image text-2xl mb-2">
+      </i>
+      <span class="text-center text-sm">
+       Upload Identification Card
+      </span>
+      <input class="hidden" id="uploadChildId" type="file"/>
+     </label>
+    </div>
+    <div class="mt-8 flex justify-center">
+     <button class="bg-gray-900 text-white px-8 py-2 text-lg font-normal rounded-sm flex items-center gap-2 hover:bg-gray-800 transition" type="submit">
+      Next
+      <span aria-hidden="true">
+       →
+      </span>
+     </button>
+    </div>
+   </form>
+  </div>
+ </body>
+</html>

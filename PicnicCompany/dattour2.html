@@ -1,0 +1,236 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Booking Tour
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: 'Inter', sans-serif;
+    }
+    .font-fredoka {
+      font-family: 'Fredoka One', cursive;
+    }
+  </style>
+ </head>
+ <body>
+  <div class="min-h-screen flex flex-col items-center justify-center relative" style="background-image: url('https://placehold.co/1920x1080?text=Background+Image+of+trees+and+grass+field'); background-size: cover; background-position: center;">
+   <!-- Progress bar -->
+   <div class="w-full max-w-5xl flex flex-col items-center mt-8 px-4 sm:px-6 md:px-8">
+    <div class="flex items-center w-full max-w-4xl justify-between relative">
+     <!-- Circles and lines container -->
+     <div class="flex items-center w-full max-w-4xl justify-between relative">
+      <!-- Line behind circles -->
+      <div class="absolute top-1/2 left-8 right-8 h-[2px] bg-yellow-300 -translate-y-1/2 z-0">
+      </div>
+      <!-- Circles -->
+      <div class="flex justify-between w-full z-10">
+       <div class="flex items-center justify-center w-8 h-8 rounded-full bg-yellow-300 text-black font-semibold text-sm">
+        1
+       </div>
+       <div class="flex items-center justify-center w-8 h-8 rounded-full bg-gray-300 text-black font-semibold text-sm">
+        2
+       </div>
+       <div class="flex items-center justify-center w-8 h-8 rounded-full bg-gray-300 text-black font-semibold text-sm">
+        3
+       </div>
+       <div class="flex items-center justify-center w-8 h-8 rounded-full bg-gray-300 text-black font-semibold text-sm">
+        4
+       </div>
+      </div>
+     </div>
+    </div>
+    <!-- Labels below circles -->
+    <div class="flex justify-between w-full max-w-4xl text-xs text-black mt-2 px-2 sm:px-0" style="font-family: Inter, sans-serif;">
+     <span class="w-1/4 text-center">
+      Contact Information
+     </span>
+     <span class="w-1/4 text-center">
+      Tour Booking Information
+     </span>
+     <span class="w-1/4 text-center">
+      Payment Information
+     </span>
+     <span class="w-1/4 text-center">
+      Tour Booking Completed
+     </span>
+    </div>
+   </div>
+   <!-- Main white container -->
+   <div class="bg-white max-w-6xl w-[90vw] mt-8 rounded-sm shadow-[0_0_20px_0_rgba(0,0,0,0.25)] relative p-6 sm:p-10">
+    <!-- Close icon top right -->
+    <button aria-label="Close" class="absolute top-4 right-4 text-black text-3xl font-bold leading-none hover:opacity-80">
+     <i class="fas fa-times">
+     </i>
+    </button>
+    <!-- Header and logo container -->
+    <div class="flex justify-between items-center mb-6">
+     <h2 class="font-extrabold text-2xl leading-tight" style="font-family: Inter, sans-serif;">
+      Booking Tour
+     </h2>
+     <div class="flex items-center space-x-1 select-none">
+      <div class="relative w-10 h-10 rounded-full border border-gray-400 flex items-center justify-center" style="font-family: 'Fredoka One', cursive;">
+       <span class="absolute top-1 left-1 text-[10px] font-bold">
+        8
+       </span>
+       <img alt="Cartoon planet icon with ring" class="w-6 h-6" height="40" src="https://storage.googleapis.com/a1aa/image/6ccc005e-81d9-43aa-9bd2-5ca0f39a3353.jpg" width="40"/>
+      </div>
+      <span class="text-3xl font-fredoka text-black select-none" style="text-shadow: 0 0 10px rgba(0,0,0,0.25);">
+       PICNIC COMPANY
+      </span>
+     </div>
+    </div>
+    <!-- Cards container -->
+    <div class="flex flex-col sm:flex-row justify-center gap-6 max-w-5xl mx-auto">
+     <!-- Card 1 -->
+     <div class="bg-white rounded-lg shadow-[0_0_20px_0_rgba(0,0,0,0.25)] max-w-xs w-full">
+      <img alt="Mountain landscape with clouds and blue sky" class="rounded-t-lg object-cover w-full h-48" height="200" src="https://storage.googleapis.com/a1aa/image/343f1275-f21b-4293-3f69-eb02ee365076.jpg" width="320"/>
+      <div class="p-4 text-sm text-gray-900" style="font-family: Inter, sans-serif;">
+       <p class="mb-1">
+        <span class="font-bold">
+         ID tour:
+        </span>
+        T01
+       </p>
+       <h3 class="font-extrabold text-base mb-2 leading-tight">
+        Sapa Tourism - Hiking Moutain
+       </h3>
+       <hr class="border-gray-300 mb-2"/>
+       <p class="mb-1">
+        <span class="font-bold">
+         Day:
+        </span>
+        3 days
+       </p>
+       <p class="mb-1">
+        <span class="font-bold">
+         Place:
+        </span>
+        Sapa VietNam
+       </p>
+       <p class="mb-1">
+        <span class="font-bold">
+         Tour guide:
+        </span>
+        Sabrina Phan
+       </p>
+       <hr class="border-gray-300 my-2"/>
+       <p>
+        Cost:
+        <span class="font-extrabold">
+         3.850.000 VND
+        </span>
+       </p>
+      </div>
+     </div>
+     <!-- Card 2 -->
+     <div class="bg-white rounded-lg shadow-[0_0_20px_0_rgba(0,0,0,0.25)] max-w-xs w-full">
+      <img alt="Boat country road surrounded by palm trees" class="rounded-t-lg object-cover w-full h-48" height="200" src="https://storage.googleapis.com/a1aa/image/574d7fd1-65e7-4454-a19c-d7a3b7166ad3.jpg" width="320"/>
+      <div class="p-4 text-sm text-gray-900" style="font-family: Inter, sans-serif;">
+       <p class="mb-1">
+        <span class="font-bold">
+         ID tour:
+        </span>
+        T02
+       </p>
+       <h3 class="font-extrabold text-base mb-2 leading-tight">
+        Ben Tre Tourism - Boat Country
+       </h3>
+       <hr class="border-gray-300 mb-2"/>
+       <p class="mb-1">
+        <span class="font-bold">
+         Day:
+        </span>
+        1 day
+       </p>
+       <p class="mb-1">
+        <span class="font-bold">
+         Place:
+        </span>
+        Ben Tre VietNam
+       </p>
+       <p class="mb-1">
+        <span class="font-bold">
+         Tour guide:
+        </span>
+        Thanh Vy Hoang
+       </p>
+       <hr class="border-gray-300 my-2"/>
+       <p>
+        Cost:
+        <span class="font-extrabold">
+         1.850.000 VND
+        </span>
+       </p>
+      </div>
+     </div>
+     <!-- Card 3 -->
+     <div class="bg-white rounded-lg shadow-[0_0_20px_0_rgba(0,0,0,0.25)] max-w-xs w-full">
+      <img alt="Mountain valley with river and blue sky" class="rounded-t-lg object-cover w-full h-48" height="200" src="https://storage.googleapis.com/a1aa/image/f0c98258-4398-4d8b-ac83-d0a0484be04c.jpg" width="320"/>
+      <div class="p-4 text-sm text-gray-900" style="font-family: Inter, sans-serif;">
+       <p class="mb-1">
+        <span class="font-bold">
+         ID tour:
+        </span>
+        T01
+       </p>
+       <h3 class="font-extrabold text-base mb-2 leading-tight">
+        Ha Giang Tourism - Camping &amp; Bonfire
+       </h3>
+       <hr class="border-gray-300 mb-2"/>
+       <p class="mb-1">
+        <span class="font-bold">
+         Day:
+        </span>
+        5 days
+       </p>
+       <p class="mb-1">
+        <span class="font-bold">
+         Place:
+        </span>
+        Ha Giang VietNam
+       </p>
+       <p class="mb-1">
+        <span class="font-bold">
+         Tour guide:
+        </span>
+        Thanh Vy Hoang
+       </p>
+       <hr class="border-gray-300 my-2"/>
+       <p>
+        Cost:
+        <span class="font-extrabold">
+         5.850.000 VND
+        </span>
+       </p>
+      </div>
+     </div>
+    </div>
+    <!-- Navigation arrows -->
+    <button aria-label="Previous" class="absolute top-1/2 left-4 -translate-y-1/2 w-10 h-10 rounded-full border border-gray-700 text-gray-700 flex items-center justify-center text-2xl" style="background: transparent;">
+     <i class="fas fa-arrow-left">
+     </i>
+    </button>
+    <button aria-label="Next" class="absolute top-1/2 right-4 -translate-y-1/2 w-10 h-10 rounded-full border border-gray-700 text-gray-700 flex items-center justify-center text-2xl" style="background: transparent;">
+     <i class="fas fa-arrow-right">
+     </i>
+    </button>
+    <!-- Next button below cards -->
+    <div class="flex justify-center mt-6">
+     <button class="bg-gray-800 text-white px-6 py-2 text-lg font-normal rounded-sm flex items-center space-x-2" style="font-family: Inter, sans-serif;">
+      <span>
+       Next
+      </span>
+      <i class="fas fa-arrow-right">
+      </i>
+     </button>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>
