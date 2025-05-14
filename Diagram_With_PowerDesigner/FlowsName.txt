@@ -1,0 +1,27 @@
+1. Báo cáo cần phê duyệt
+2. Quyết định phê duyệt
+3. Báo cáo tiến độ
+4. Thông tin khách hàng
+5. Các ý kiến đống góp, phản ánh
+6. Danh sách các ý kiến phản ánh, đóng góp
+7. Kết quả xử lý ý kiến, đóng góp
+8. Thống kê báo cáo kết quả kinh doanh
+9. Danh sách tra cứu tour (Kết quả trên hệ thống)
+10. Chiến lược kinh doanh
+11. Kết quả tra cứu tour của nhân viên bán hàng (Kết quả trên hệ thống)
+12. Thông tin cập nhật
+13. Danh sách các khách hàng
+14. Thông tin đối tác cung cấp dịch vụ
+15. Hóa đơn thanh toán cho đối tác cung cấp dịch vụ
+16. Số liệu thu chi
+17. Thống kê tài chính
+18. Hợp đồng với đối tác cung cấp dịch vụ
+19. Danh sách thông tin các tour (Excel)
+20. Báo cáo tài chính
+21. Quyết định phê duyệt báo cáo tài chính
+22. Thông tin tuyển dụng
+23. Thông tin ứng viên
+24. Danh sách nhân viên được khen thưởng
+25. Danh sách thông tin nhân sự
+
+9-11-19
